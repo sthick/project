@@ -289,7 +289,6 @@ h1 {
 
 footer {
   grid-column: 1 / -1;
-  grid-row: 7/-1;
   padding-top: 30px;
   text-align: center;
   font-weight: 700;
@@ -662,4 +661,10 @@ a:hover {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+iframe{
+    margin: 20px;
+    margin-left: 100px;
+    width: 1300px;
+    height: 800px;
 }
