@@ -386,7 +386,7 @@ body {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-row-gap: 20px;
-    grid-template-rows: auto auto 500px 500px 500px 50px 50px;
+    grid-template-rows: auto auto auto 500px 500px 50px 50px;
     width: 100vw;
     height: 100vh;
     background: rgb(239,239,240);
