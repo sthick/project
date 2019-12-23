@@ -236,7 +236,7 @@ h1 {
     margin-top: 40px;
     color: black;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 400px;
     position: absolute;
     transition: all .3s;
 
@@ -386,7 +386,7 @@ body {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-row-gap: 20px;
-    grid-template-rows: auto 500px 500px 500px 500px 50px 50px;
+    grid-template-rows: auto auto 500px 500px 500px 50px 50px;
     width: 100vw;
     height: 100vh;
     background: rgb(239,239,240);
@@ -667,4 +667,83 @@ iframe{
     margin-left: 100px;
     width: 1300px;
     height: 800px;
+}
+.collapsible{
+    display: block;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    width: 400px; 
+    margin-left: 50px;
+    background-color: #060829;
+    border: 1px double black;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}  
+.cavsproj{
+    grid-row: 2/3;
+}
+.cavsproj img{
+    width: 60vw;
+    margin-left: 300px;
+}
+.cavsproj button{
+    width: 60vw;
+    margin-left: 300px;
+}
+.cavsproj p{
+    display: none;
+    width: 55vw;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.softballproj{
+    grid-row: 1/2;
+}
+.softballproj img{
+    width: 60vw;
+    margin-left: 300px;
+}
+.softballproj button{
+    width: 60vw;
+    margin-left: 300px;
+}
+.softballproj p{
+    display: none;
+    width: 55vw;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.graphicproj{
+    grid-row: 3/4;
+}
+.graphicproj img{
+    width: 60vw;
+    margin-left: 300px;
+}
+.graphicproj button{
+    width: 60vw;
+    margin-left: 300px;
+}
+.graphicproj p{
+    display: none;
+    width: 55vw;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
 }

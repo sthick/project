@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e211125178.js" crossorigin="anonymous"></script>
+    <title>Samantha Thick</title>
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+   
+    <header>
+    <div id ="navigations">
+        <a href= "#main-menu" id = "main-menu-toggle" class = "menu-toggle" aria-label= "Open main menu">
+            <span class="sr-only">Open Main Menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        
+        <a href="index.html">
+            <h1 id="logo">Samantha Thick</h1>
+        </a>
+        
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close Main Menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                    <li><a href= "index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href = "resume.html">RESUME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="gallery.html">IMAGE GALLERY</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-label="first" aria-hidden="true" hidden></a>
+    </div>
+    </header>
+    <div class="container" id="main">
+        <div class="softballproj">
+            <!-- <h1>Michigan Softball</h1> -->
+            <img src="images/msoftball.jpg" alt="Michigan Softball Logo">
+            <button type="button" class="collapsible">Pitching Analysis</button>
+            <p>After we started with two new data collection devices, FlightScope and Rapsodo, there was an extreme amount of data that the coaches did not know how to use.  This information overflow made it hard for them to parse through the data and look at numbers they wanted to analyze.  The pitching coach and video coordinator approached me with this issue and requested an excel file that does easy calculations on a limited number of the data sets.  In response I created a macro based excel file that allowed the pitching coach to look more closely at the data and analyze it based on pitcher, date, and more.</p>
+            <button type="button" class="collapsible">In Progress: Pitch Spin and Exit Velocity Change Over Time</button>
+            <p>I am currently researching pitch spin for pitchers and exit velocity for hitters.  These are two of the main measurements the coaches look at on a daily basis and with almost three years of data for me to look at I have decided to look at the change in these metrics throughout a season.  I hope to find a relationship of when pitchers and hitters are at their best performance levels in order to adjust routines to make sure when they are at their best it is at the right time in the season.</p>
+        </div>
+        
+        <div class="graphicproj">
+            <!-- <h1>Graphic Design</h1> -->
+            <img src="images/bbbprogram2.jpg" alt="School Play Logo">
+            <button type="button" class="collapsible">Graphic Design Projects</button>
+            <p>In high school I was the graphic designer for all propoganda pertaining to the drama club production of Bye Bye Birdie. I have taken multiple Adobe Photoshop and Adobe Illustrator oriented courses in both high school and college and experimented with independent projects.<br><br>To see a selection of these projects visit the <a href="gallery.html">Image Gallery</a></p>
+        </div>
+            
+        <div class="cavsproj">
+            <!-- <h1>Cleveland Cavaliers</h1>  -->
+            <img src="images/cavaliers-cavs-cleveland-1081256.jpg" alt="Cleveland Cavaliers Logo"/>
+            <button type="button" class="collapsible">LeagueApps</button>
+            <p>Part 1:<br>I was given the job to pull data from LeagueApps camp data that was unusable by the marketing department because of the form the data was in.  I did this by creating a lambda function to take relevant information gathered through camp/clinic registration from LeagueApps API and store it in the company's Amazon S3 bucket as a json file for future use.  This process previously was done every morning by a marketing employee who had to log into the LeagueApps website, download the necessary information as a csv file, clean the data to make it readable removing unnecessary information and checking for duplicate registrationIDs, and saving it for future use.  With the creation of this lambda there is no longer a need for manual labor because after deploying the code it will run every morning saving the information to the necessary location in an easily scrapable file as well as a file that is easy to read and access.<br><br>Part 2:<br>After pulling LeagueApps information we now wanted to add this information to the customer profile information the Cavaliers have been accumulating for years.  I was assigned with adding the new information from LeagueApps to the customer profile as well as updating the customer profile information that was already there.  The program I created pulls the customer profile information and LeagueApps information and checks for duplicates, updated existing information, and adds the the new contacts to the profile.</p>
+            <button type="button" class="collapsible">Historical Page Update</button>
+            <p>In preparation for a history of the Cleveland Cavaliers website a history of each team for the last fifty years was created and saved in a google spreadsheet.  Each team had its own worksheet filled with information from that year (e.g. Players, coaches, uniforms, ect).  This google spreadsheet needed to be added to an Amazon S3 bucket as a json file in order to be scraped and used for website creation. I was approached with the task of finding the easiest, and cheapest way to update an S3 bucket with a file for each year every time a change was made to that particular google spreadsheet.  The program I wrote allows that to happen because once deployed the runtime was set to every 4 seconds, therefore if a change is made the S3 bucket will be updated with that change almost immediately.</p>
+            <button type="button" class="collapsible">Facebook Ad Data</button>
+            <p>I was asked to pull the Facebook Ad data for all Cavalier related accounts and add them to our Looker Dashboards and Amazon S3 buckets for future analysis.  This required communicating with team members in order to get the correct access credentials for the Facebook accounts as well as learning and implementing the facebook API.  Once the data was pulled it was added to the Looker connections where I cleaned the data and used it to make visualizations for the marketing department.</p>
+            <button type="button" class="collapsible">Looker Research</button>
+            <p>After meeting with a member of the basketball operations team who has used Looker for work they are doing our team decided to explore its use for the development team to find out if the cost would be worth it.  I was given a login and put in charge of learning the ins and outs of Looker and reporting back to my superiors on the effectiveness of the application.</p>
+        </div>    
+    </div>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!-- <footer>
+        <p>All Work &#169; Samantha Thick 2019</p>
+    </footer> -->
+</body>
+</html>
