@@ -260,7 +260,6 @@ h1 {
    padding: 20px;
    margin-top: 0px;
    box-shadow: 0px 10px 10px grey;
-
 } */
 
 
@@ -386,7 +385,7 @@ body {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-row-gap: 20px;
-    grid-template-rows: auto auto 500px 500px 500px 50px 50px;
+    grid-template-rows: auto auto 500px 500px 500px 500px 50px 50px;
     width: 100vw;
     height: 100vh;
     background: rgb(239,239,240);
@@ -507,6 +506,71 @@ a:hover {
     margin-bottom:0px;
 }
 
+
+.softball{
+    background-image: url("../images/msoftball.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/-1;
+    grid-row:3/4;
+}
+.softball p{
+    background-color: white;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin: 30px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 800px;
+    margin-top: 150px;
+}
+.softball h1{
+    color: #ffcb05;
+    margin-top: 50px;
+    margin-left: 1250px;
+    margin-bottom:0px;
+}
+
+.etas{
+    background-image: url("../images/etas.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+.etas p{
+    background-color: white;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin: 30px;
+    padding: 30px;
+    margin-left: 850px;
+    margin-top: 150px;
+}
+.etas h1{
+    color: white;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom:0px;
+}
+
+
 .cavs{
     background-image: url("../images/cavaliers-cavs-cleveland-1081256.jpg");
 
@@ -519,7 +583,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 5/6;
 }
 .cavs p{
     background-color: white;
@@ -538,39 +602,6 @@ a:hover {
     margin-left: 100px;
     margin-bottom:0px;
 }
-
-
-.softball{
-    background-image: url("../images/msoftball.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1/-1;
-    grid-row:4/5;
-}
-.softball p{
-    background-color: white;
-    vertical-align: middle;
-    background-color: rgba(255, 255, 255, .8);
-    border: 10px solid black;
-    margin: 30px;
-    padding: 30px;
-    margin-left: 850px;
-    margin-top: 150px;
-}
-.softball h1{
-    color: #ffcb05;
-    margin-top: 50px;
-    margin-left: 1250px;
-    margin-bottom:0px;
-}
-
 .personal{
     background-image: url("../images/design.jpg");
 
@@ -583,7 +614,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1/-1;
-    grid-row:5/6;
+    grid-row:6/7;
 }
 .personal p{
     background-color: white;
@@ -592,8 +623,7 @@ a:hover {
     border: 10px solid black;
     margin: 30px;
     padding: 30px;
-    margin-left: 100px;
-    margin-right: 800px;
+    margin-left: 850px;
     margin-top: 150px;
 }
 .personal h1{
@@ -624,7 +654,7 @@ a:hover {
     grid-column: 2/5;
     margin-right: 100px;
     height: 550px;
-    background-color: #43529F;
+    /* background-color: #43529F; */
     border: 10px solid black;
 }
 .formcontainer legend{
@@ -684,27 +714,7 @@ iframe{
 .active, .collapsible:hover {
     background-color: #555;
 }  
-.cavsproj{
-    grid-row: 2/3;
-}
-.cavsproj img{
-    width: 60vw;
-    margin-left: 300px;
-}
-.cavsproj button{
-    width: 60vw;
-    margin-left: 300px;
-}
-.cavsproj p{
-    display: none;
-    width: 55vw;
-    margin-left: 300px;
-    background-color: rgba(255, 255, 255, .8);
-    border: 10px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 30px;
-}
+
 .softballproj{
     grid-row: 1/2;
 }
@@ -726,15 +736,55 @@ iframe{
     margin-bottom: 10px;
     padding: 30px;
 }
-.graphicproj{
+.etasproj{
+    grid-row: 2/3;
+}
+.etasproj img{
+    width: 60vw;
+    margin-left: 300px;
+}
+.etasproj button{
+    width: 60vw;
+    margin-left: 300px;
+}
+.etasproj p{
+    display: none;
+    width: 55vw;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.cavsproj{
     grid-row: 3/4;
 }
+.cavsproj img{
+    width: 60vw;
+    margin-left: 300px;
+}
+.cavsproj button{
+    width: 60vw;
+    margin-left: 300px;
+}
+.cavsproj p{
+    display: none;
+    width: 55vw;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.graphicproj{
+    grid-row: 4/5;
+}
 .graphicproj img{
-    transform: rotate(90deg);
-    height: 60vw;
-    margin-left: 470px;
-    margin-top: -165px;
-    margin-bottom: -165px;
+    width: 60vw;
+    margin-left: 300px;
+    margin-top: 250px;
 }
 .graphicproj button{
     width: 60vw;
